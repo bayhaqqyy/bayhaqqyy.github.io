@@ -7,6 +7,8 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+
+
 :root {
 
   /**
@@ -332,7 +334,7 @@ main {
 
 .info-content .name {
   color: var(--white-2);
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
@@ -1241,6 +1243,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   border-radius: 50%;
   margin-bottom: 20px;
 }
+
+#img-ansible {
+  margin: auto;
+}
+
+#img-ansible img {
+  width: 200px;
+  height: 200px; 
+  margin:auto;
+  margin-top: 20px;
+}
+
 .card .image img {
   width: 100%;
   height: 100%;
@@ -1422,7 +1436,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box img { width: 120px; }
 
-  .info-content .name { margin-bottom: 15px; }
+  .info-content .name { margin-bottom: 12px; }
 
   .info-content .title { padding: 5px 18px; }
 
@@ -1549,7 +1563,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .modal-img-wrapper > img {
     display: block;
     flex-grow: 1;
-    width: 35px;
+    width: 10px;
   }
 
   /* clients */
@@ -1961,3 +1975,5 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+

@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.png" >
+  <link rel="shortcut icon" href="./assets/images/logo.png">
 
   <!--
     - custom css link
@@ -24,10 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!--
-    - custom card
-  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  
 </head>
 
 <body>
@@ -221,8 +218,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="/assets/images/Project Akhir (3).svg"
-                 alt="design icon" width="40">
+                <img src="./assets/images/Project Akhir (3).svg" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -261,6 +257,7 @@
 
                 <p class="service-item-text">
                   Develop and maintain cloud-native systems, integrate scalable services, optimize resource efficiency, enforce security best practices, resolve cloud infrastructure issues, and support seamless application delivery.
+                </p>
               </div>
 
             </li>
@@ -346,22 +343,22 @@
 
               <h4 class="h4 timeline-item-title">SMKN 1 Adiwerna</h4>
 
-              <span>2021 — 2024</span>
+              <span>2021 &mdash; 2024</span>
+
+              <ul class="timeline-highlights">
+                <li class="timeline-text">
+                  Get a scholarship to take the RHCSA (RedHat Certificate System Administrator), RHCSC (Red Hat Certified Specialist in Containers), and RHCE (RedHat Certified Engineer) certification exams.
+                </li>
+                <li class="timeline-text">
+                  Get a scholarship to attend the SysAdmin Bootcamp at ID-Networkers for 1 year.
+                </li>
+                <li class="timeline-text">
+                  Get a scholarship for Mikrotik certification (MTCNA).
+                </li>
+              </ul>
             </li>
           </ol>
-          <ol class="timeline-list">
-              <section class="about-text">
-                <p class="timeline-text">
-                  Get a scholarship to take the RHCSA (RedHat Certificate System Administrator) RHCSC (Red Hat Certified Specialist in Containers) and RHCE (RedHat Certificate Engineer) certification exams.
-                </p>
-                <p class="timeline-text">
-                  Get a scholarship to attend the SysAdmin Bootcamp at ID-Networkers for 1 years.
-                </p>
-                <p class="timeline-text">
-                  Get a scholarship for Mikrotik certification (MTCNA).
-                </p>
-              </section>
-          </ol>   
+  
         </section>
 
         <section class="timeline">
@@ -382,7 +379,7 @@
               <h6 class="h6 ">PT.Solusi Teknologi Nusantara</h6>
               
 
-              <span>2023 - 2024</span>
+              <span>2023 &mdash; 2024</span>
 
               <p class="timeline-text">
                 Implement automated tools and frameworks (CI/CD pipelines) using GitLab, 
@@ -416,84 +413,19 @@
           - clients
         -->
 
-        <section  class="clients">
+        <section class="clients">
 
           <h3 class="h3 clients-title">Skills</h3>
-          <div class="swiper-container">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="image">
-                      <img src="assets/images/s1.png" alt="Card Image">
-                    </div>
-                    <h3>Linux</h3>
-                    <p>2 years of experience</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="image">
-                      <img src="assets/images/s2.png" alt="Card Image">
-                    </div>
-                    <h3>Docker</h3>
-                    <p>1 years of experience</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="image">
-                      <img src="assets/images/s3.png" alt="Card Image">
-                    </div>
-                    <h3>Gitlab</h3>
-                    <p>6 month of experience</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card" id="img-ansible">
-                    <div class="image">
-                      <img src="assets/images/Project Akhir (4).png" alt="Card Image">
-                    </div>
-                    <h3>Ansible</h3>
-                    <p>1 years of experience</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="image">
-                      <img src="/assets/images/Project Akhir (3).png" alt="Card Image">
-                    </div>
-                    <h3>Grafana</h3>
-                    <p>6 month of experience</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="image">
-                      <img src="assets/images/Project Akhir (1).png" alt="Card Image">
-                    </div>
-                    <h3>Prometheus</h3>
-                    <p>6 Month of experience</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="image">
-                      <img src="assets/images/Project Akhir (5).png" alt="Card Image">
-                    </div>
-                    <h3>Kubernetes</h3>
-                    <p>1 years of experience</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
-            <div class="swiper-scrollbar"></div>
+          <div class="skills-carousel" data-skills-carousel>
+            <button class="skills-nav" type="button" aria-label="Previous skills" data-skills-prev>
+              <ion-icon name="chevron-back"></ion-icon>
+            </button>
+            <div class="skills-track" data-skills-track></div>
+            <button class="skills-nav" type="button" aria-label="Next skills" data-skills-next>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </button>
           </div>
-          
+
         </section>
 
       </article>
@@ -543,7 +475,7 @@
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-select-value>Select category</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -834,8 +766,6 @@
 
       </article>
       <!--
-        - #FOOTER
-      --      <!--
         - #BLOG
       -->
 
@@ -853,7 +783,7 @@
               <a href="https://blog.bayhaqqyy.my.id/install-set-up-docker-on-ubuntu-202224">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog1.jpeg" alt="Docker" loading="Bayhaqqy">
+                  <img src="./assets/images/blog1.jpeg" alt="Docker" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -881,7 +811,7 @@
               <a href="https://blog.bayhaqqyy.my.id/install-and-setup-prometheus-grafana-di-docker-compose">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog.png" alt="Monitoring" loading="Bayhaqqy">
+                  <img src="./assets/images/blog.png" alt="Monitoring" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -909,7 +839,7 @@
               <a href="https://www.idn.id/pengertian-jenis-dan-pointing-web-server/">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog3.jpg" alt="Linux" loading="Bayhaqqy">
+                  <img src="./assets/images/blog3.jpg" alt="Linux" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -938,7 +868,7 @@
               <a href="https://www.idn.id/monitoring-system-pengertian-manfaat-dan-penerapannya/">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog4.jpg" alt="Linux" loading="Bayhaqqy">
+                  <img src="./assets/images/blog4.jpg" alt="Linux" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -966,7 +896,7 @@
               <a href="https://www.idn.id/konfigurasi-pdns-pada-ubuntu/">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog5.jpg" alt="Linux" loading="Bayhaqqy">
+                  <img src="./assets/images/blog5.jpg" alt="Linux" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -995,7 +925,7 @@
               <a href="https://blog.bayhaqqyy.my.id/langkah-mudah-deploy-wordpress-di-docker-dengan-load-balancing-untuk-skalabilitas">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog6.png" alt="Linux" loading="Bayhaqqy">
+                  <img src="./assets/images/blog6.png" alt="Linux" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1024,7 +954,7 @@
               <a href="https://blog.bayhaqqyy.my.id/instalasi-dan-konfigurasi-raid-windows-server">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog7.png" alt="Windows Server" loading="Bayhaqqy">
+                  <img src="./assets/images/blog7.png" alt="Windows Server" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1051,7 +981,7 @@
               <a href="https://blog.bayhaqqyy.my.id/panduan-lengkap-konfigurasi-dhcp-server-nat-gateway-di-windows-server-2022">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog8.png" alt="Windows Server" loading="Bayhaqqy">
+                  <img src="./assets/images/blog8.png" alt="Windows Server" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1079,7 +1009,7 @@
               <a href="https://www.idn.id/panduan-lengkap-xcp-ng-virtualisasi-untuk-pemula/">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/xcp.png" alt="Virtualization" loading="Bayhaqqy">
+                  <img src="./assets/images/xcp.png" alt="Virtualization" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1106,7 +1036,7 @@
               <a href="https://www.idn.id/implementasi-kvm-pada-ubuntu-24/">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/kvm.png" alt="Virtualization" loading="Bayhaqqy">
+                  <img src="./assets/images/kvm.png" alt="Virtualization" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1133,7 +1063,7 @@
               <a href="https://www.idn.id/panduan-lengkap-windows-server-instalasi-dan-konfigurasi/">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/win.jpg" alt="Windows Server" loading="Bayhaqqy">
+                  <img src="./assets/images/win.jpg" alt="Windows Server" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1181,7 +1111,7 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://formspree.io/f/xanwroae" method="post"" class="form" data-form>
+          <form action="https://formspree.io/f/xanwroae" method="post" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1214,7 +1144,7 @@
   <!--
     - custom js link
   -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./assets/js/skills.js"></script>
   <script src="./assets/js/script.js"></script>
   <!--
     - ionicon link

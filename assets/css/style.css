@@ -874,14 +874,16 @@ main {
 
 .theme-toggle {
   position: absolute;
-  top: 12px;
-  right: 54px;
-  display: inline-flex;
+  top: 10px;
+  right: 12px;
+  display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
   box-shadow: var(--shadow-2);
@@ -908,8 +910,15 @@ main {
 }
 
 .theme-toggle span {
+  display: inline-flex;
+  align-items: center;
   font-weight: var(--fw-500);
   color: inherit;
+}
+
+.theme-toggle ion-icon {
+  display: inline-flex;
+  align-items: center;
 }
 
 .timeline-highlights {
@@ -1771,7 +1780,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 @media (max-width: 580px) {
   .theme-toggle {
     top: 8px;
-    right: 46px;
+    right: 10px;
     padding: 5px 8px;
     font-size: 11px;
   }

@@ -14,38 +14,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
-// theme toggle
-const themeToggle = document.querySelector("[data-theme-toggle]");
-const themeLabel = document.querySelector("[data-theme-label]");
-const root = document.documentElement;
-
-const applyTheme = (theme) => {
-  root.setAttribute("data-theme", theme);
-  if (themeLabel) {
-    themeLabel.textContent = theme === "light" ? "Bright" : "Dark";
-  }
-  const metaTheme = document.querySelector('meta[name="theme-color"]');
-  if (metaTheme) {
-    metaTheme.setAttribute("content", theme === "light" ? "#f5f5f5" : "#0d0d0f");
-  }
-};
-
-const storedTheme = localStorage.getItem("theme");
-if (storedTheme) {
-  applyTheme(storedTheme);
-} else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
-  applyTheme("light");
-} else {
-  applyTheme("dark");
-}
-
-if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    const nextTheme = root.getAttribute("data-theme") === "light" ? "dark" : "light";
-    applyTheme(nextTheme);
-    localStorage.setItem("theme", nextTheme);
-  });
-}
 
 
 

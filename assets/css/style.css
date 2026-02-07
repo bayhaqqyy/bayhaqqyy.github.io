@@ -105,52 +105,6 @@
 
 }
 
-/* Light theme overrides */
-[data-theme="light"] {
-  --bg-gradient-onyx: linear-gradient(
-    to bottom right,
-    hsl(0, 0%, 97%) 0%,
-    hsl(0, 0%, 92%) 100%
-  );
-  --bg-gradient-jet: linear-gradient(
-    to bottom right,
-    hsla(0, 0%, 100%, 0.9) 0%,
-    hsla(0, 0%, 100%, 0.6) 100%
-  );
-  --bg-gradient-yellow-1: linear-gradient(
-    to bottom right,
-    hsl(45, 100%, 70%) 0%,
-    hsla(45, 100%, 70%, 0.35) 100%
-  );
-  --bg-gradient-yellow-2: linear-gradient(
-    135deg,
-    hsla(45, 100%, 70%, 0.35) 0%,
-    hsla(45, 100%, 70%, 0) 60%
-  );
-  --border-gradient-onyx: linear-gradient(
-    to bottom right,
-    hsl(0, 0%, 75%) 0%,
-    hsla(0, 0%, 75%, 0) 50%
-  );
-  --text-gradient-yellow: linear-gradient(
-    to right,
-    hsl(35, 90%, 45%),
-    hsl(45, 95%, 50%)
-  );
-
-  --jet: hsl(0, 0%, 80%);
-  --onyx: hsl(0, 0%, 92%);
-  --eerie-black-1: hsl(0, 0%, 98%);
-  --eerie-black-2: hsl(0, 0%, 99%);
-  --smoky-black: hsl(0, 0%, 96%);
-  --white-1: hsl(0, 0%, 12%);
-  --white-2: hsl(0, 0%, 10%);
-  --orange-yellow-crayola: hsl(35, 90%, 45%);
-  --vegas-gold: hsl(35, 80%, 45%);
-  --light-gray: hsl(0, 0%, 25%);
-  --light-gray-70: hsla(0, 0%, 35%, 0.8);
-  --bittersweet-shimmer: hsl(0, 60%, 45%);
-}
 
 
 
@@ -872,54 +826,6 @@ main {
   line-height: 1.6;
 }
 
-.theme-toggle {
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  line-height: 1;
-  white-space: nowrap;
-  color: var(--orange-yellow-crayola);
-  background: var(--border-gradient-onyx);
-  box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
-}
-
-.theme-toggle::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  border-radius: inherit;
-  background: var(--bg-gradient-jet);
-  z-index: -1;
-}
-
-.theme-toggle:hover,
-.theme-toggle:focus-visible {
-  background: var(--bg-gradient-yellow-1);
-}
-
-.theme-toggle:hover::before,
-.theme-toggle:focus-visible::before {
-  background: var(--bg-gradient-yellow-2);
-}
-
-.theme-toggle span {
-  display: inline-flex;
-  align-items: center;
-  font-weight: var(--fw-500);
-  color: inherit;
-}
-
-.theme-toggle ion-icon {
-  display: inline-flex;
-  align-items: center;
-}
 
 .timeline-highlights {
   display: grid;
@@ -1777,14 +1683,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-@media (max-width: 580px) {
-  .theme-toggle {
-    top: 8px;
-    right: 10px;
-    padding: 5px 8px;
-    font-size: 11px;
-  }
-}
 
 
 
